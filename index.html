@@ -27,7 +27,10 @@ datastr=(date +" " + month )
       <div class="visible">
         <h2>Оставьте заявку и наши менеджеры Вам перезвонят!</h2>
           <div class="content">
-          <form action="order.php" method="post">
+          <form id="form" action="send.php" 
+    method="POST" 
+    name="order-form"
+    accepted-charset="utf-8">
             <input class="modal-inp" type="text" name="name" required="" placeholder="Ваше имя"><br>
             <span style="color: #ccc">например: Иванов Иван Иванович</span><br>
             <input class="modal-inp" type="text" name="phone" required="" placeholder="Ваш телефон" id="phone"><br>
@@ -101,7 +104,10 @@ datastr=(date +" " + month )
      </div>
      <div class="grpelem" id="u181"><!-- simple frame --></div>
      <div class="grpelem" id="u569"><!-- simple frame --></div>
-     <form class="form-grp clearfix grpelem" id="widgetu130" method="post" enctype="multipart/form-data" action="order.php"><!-- none box -->
+     <form id="form" action="send.php" 
+    method="POST" 
+    name="order-form"
+    accepted-charset="utf-8"><!-- none box -->
       <div class="fld-grp clearfix grpelem" id="widgetu137" data-required="true"><!-- none box -->
        <label class="fld-label actAsDiv clearfix grpelem" id="u139-4" for="widgetu137_input"><!-- content --><span class="actAsPara">Ваше Имя:</span></label>
        <span class="fld-input NoWrap actAsDiv shadow clearfix grpelem" id="u138-4"><!-- content --><input placeholder="Введите ваше имя" class="wrapped-input" required="" type="text" spellcheck="false" id="widgetu137_input" name="name" tabindex="1"></span>
